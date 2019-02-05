@@ -8,7 +8,7 @@ The information hereunder don't replace or modify them in anyway.
 In order to design a LoRaWAN network, a civil engineer must know which factors influence LoRa transmissions and which don't.
 The objective of this project is to list these influencing factors and to prioritize them.
 
-## Goals
+## Expected outcomes
 
 * Describe the elements implied in a LoRaWAN transmissions.
 * Describe the configuration parameters of LoRaWAN (spreading factor, channel, ...).
