@@ -26,3 +26,4 @@ The objective of this project is to list these influencing factors and to priori
 ## Documentation
 
 * [The Things Indoor Gateway](TTIG.md)
+* [Pycom boards micropython](https://docs.pycom.io/)
