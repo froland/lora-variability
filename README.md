@@ -20,4 +20,4 @@ The objective of this project is to list these influencing factors and to priori
 * Determine the top X factors influencing the LoRaWAN transmission and present these influences graphically.
 * Adapt the emitting object and the data collection process to improve the analysis.
 * Write a scientific article, following the IEEE article template, that summarizes the project and its findings.
-* Present orally a summary of the project and its findings.
+* Present a spoken summary of the project and its findings.
