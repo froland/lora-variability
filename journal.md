@@ -1,5 +1,12 @@
 ## 2019-02-27
 
+### Attendees
+
+* François
+* Nikola
+
+### Meeting notes
+
 * setup the gateway
 * upload firmware to lopy
 * check data received in TTN console
