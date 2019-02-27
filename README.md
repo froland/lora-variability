@@ -1,7 +1,7 @@
 # LoRa variability project
 
 The objectives and learning outcomes of the project are defined at http://applications.umons.ac.be/web/en/pde/2018-2019/ue/UI-M1-IRELEC-104-M.htm.
-The information hereunder don't replace or modify them in anyway.
+The information hereunder doesn't replace or modify them in anyway.
 
 ## Main objective
 
@@ -22,6 +22,10 @@ The objective of this project is to list these influencing factors and to priori
 * Adapt the emitting object and the data collection process to improve the analysis.
 * Write a scientific article, following the IEEE article template, that summarizes the project and its findings.
 * Present a spoken summary of the project and its findings.
+
+## Journal
+
+* [Journal](journal.md)
 
 ## Documentation
 
