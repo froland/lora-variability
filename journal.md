@@ -8,7 +8,7 @@
 
 ### Next steps
 
-* reproduce LoPy to tsvisu setup at home
-* provide a draft data storage structure
-* provide the list of factor to measure
-* provide a list of outputs (graphs, statistics, ...)
+* [ ] reproduce LoPy to tsvisu setup at home
+* [ ] provide a draft data storage structure
+* [ ] provide the list of factor to measure
+* [ ] provide a list of outputs (graphs, statistics, ...)
