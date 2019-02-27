@@ -1,3 +1,5 @@
+# Meeting notes
+
 ## 2019-02-27
 
 ### Attendees
@@ -5,7 +7,7 @@
 * François
 * Nikola
 
-### Meeting notes
+### Notes
 
 * setup the gateway
 * upload firmware to lopy
@@ -20,3 +22,39 @@
 * [ ] provide a list of outputs (graphs, statistics, ...)
 * [ ] provide a list of factors to measure
 * [ ] complete this journal with previous meeting notes
+
+## 2019-02-21
+
+### Attendees
+
+* François
+* Nikola
+* Véronique
+
+### Notes
+
+*TBC*
+
+## 2019-02-14
+
+### Attendees
+
+* François
+* Nikola
+* Véronique
+
+### Notes
+
+*TBC*
+
+## 2019-02-06
+
+### Attendees
+
+* François
+* Nikola
+* Véronique
+
+### Notes
+
+*TBC*
