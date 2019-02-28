@@ -10,6 +10,7 @@
 * (To discuss) Wind speed and direction
 * airborne particulate matter
 * (To discuss) Energy consumption of the end-device
+* (To discuss) Packet error rate
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
@@ -21,4 +22,3 @@
 * (To discuss) Histogram of the used SF 
 * RSSI as a function of the distance between the end-device and the gateway
 * SNR as a function of the distance between the end-device and the gateway
-* (To discuss) Packet error rate
