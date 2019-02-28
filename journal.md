@@ -19,8 +19,8 @@
 
 * [ ] reproduce LoPy to tsvisu setup at home
 * [ ] provide a draft data storage structure
-* [ ] provide a list of outputs (graphs, statistics, ...)
-* [ ] provide a list of factors to measure
+* [X] provide a list of outputs (graphs, statistics, ...)
+* [X] provide a list of factors to measure
 * [X] complete this journal with previous meeting notes
 
 ## 2019-02-21
