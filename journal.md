@@ -21,7 +21,7 @@
 * [ ] provide a draft data storage structure
 * [ ] provide a list of outputs (graphs, statistics, ...)
 * [ ] provide a list of factors to measure
-* [V] complete this journal with previous meeting notes
+* [X] complete this journal with previous meeting notes
 
 ## 2019-02-21
 
