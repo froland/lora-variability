@@ -16,7 +16,7 @@
 # Outputs : how to represent the data (graph, stastitics, ...)
 
 * Pearson correlation matrix
-* RSSI as a function of the temperature
+* RSSI as a function of the temperature, solar radiation, rain quantity, ...
 * RSSI with different spreading factors
 * Probability density function of RSSI/SNR values of the received frames, as reported by gateways
 * (To discuss) Histogram of the used SF 
