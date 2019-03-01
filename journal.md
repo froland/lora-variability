@@ -17,7 +17,7 @@
 
 ### Next steps
 
-* [ ] reproduce LoPy to tsvisu setup at home
+* [X] reproduce LoPy to tsvisu setup at home
 * [ ] provide a draft data storage structure
 * [X] provide a list of outputs (graphs, statistics, ...)
 * [X] provide a list of factors to measure
