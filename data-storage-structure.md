@@ -9,5 +9,9 @@
 * gateway_id : string
 * RSSI : integer
 * SNR : integer (in dBm)
-* timeslot : integer (Can we know the time of the day with this ?)
+* timeslot : integer
+* time : string
+* frequency : integer
+* data rate : string
+* coding rate : string
 * payload : integer or float (degree celsius, atm, ppm, ...) --> The environnmental parameter measured
