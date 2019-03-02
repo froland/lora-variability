@@ -3,6 +3,7 @@
 ## packet_enddevice
 
 * dev_eui : bytes
+* app_eui : bytes
 * SF : integer (from 7 to 12)
 * BW : integer
 * gateway_id : string
