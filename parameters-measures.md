@@ -11,6 +11,7 @@
 * airborne particulate matter
 * (To discuss) Energy consumption of the end-device
 * (To discuss) Packet error rate
+* (To discuss) Daytime/nighttime measures
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
