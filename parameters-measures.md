@@ -10,8 +10,15 @@
 * (To discuss) Wind speed and direction
 * airborne particulate matter
 * (To discuss) Energy consumption of the end-device
-* (To discuss) Packet error rate
 * (To discuss) Daytime/nighttime measures
+* Week-end, working period, holidays
+* Season of the year
+
+# Parameters that could be computed from measures
+
+* Packet reception rate
+* Packet error rate
+* Gateway reception datarate
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
