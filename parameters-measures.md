@@ -8,7 +8,7 @@
 * SNR
 * Atmospheric pressure
 * (To discuss) Wind speed and direction
-* airborne particulate matter
+* Airborne particulate matter
 * (To discuss) Energy consumption of the end-device
 * (To discuss) Daytime/nighttime measures
 * Week-end, working period, holidays
