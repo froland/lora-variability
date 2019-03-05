@@ -1,5 +1,8 @@
 # Data storage structure
 
+
+# Second draft
+
 ## end_device
 
 * app_name : string
@@ -32,7 +35,10 @@
 * rssi : integer
 * snr : integer
 
-## First draft
+
+# First draft
+
+## packet_enddevice
 
 * dev_eui : bytes
 * app_eui : bytes
