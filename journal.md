@@ -12,7 +12,10 @@
 
 ### Next steps
 
-* [ ]
+* [ ] 15/03 report what needs to be collected:
+  * internal parameters
+  * external parameters with priority
+* [ ] write dummy CSV files with selected data
 
 ## 2019-02-27
 
