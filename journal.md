@@ -1,5 +1,19 @@
 # Meeting notes
 
+## 2019-03-06
+
+### Attendees
+
+* François
+* Nikola
+* Véronique
+
+### Notes
+
+### Next steps
+
+* [ ]
+
 ## 2019-02-27
 
 ### Attendees
