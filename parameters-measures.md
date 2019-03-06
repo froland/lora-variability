@@ -11,7 +11,11 @@
 * Airborne particulate matter
 * (To discuss) Energy consumption of the end-device
 * Timestamp
-
+* Frequency band
+* CR (coding rate)
+* SF (spreading factor)
+* Payload size
+* Emission power (if we can get it and transmit it - transmit the previous power(s) in the next packet(s) - store the values in non-volatile memory)
 
 # Parameters that could be computed from measures
 
