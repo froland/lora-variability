@@ -8,3 +8,5 @@
 * RSSI : integer (in dBm)
 * SNR : integer
 * timestamp : timestamp (time region - date - hour/min/sec)
+* frequency band : float (in MHz)
+* SF : integer (from 7 to 12)
