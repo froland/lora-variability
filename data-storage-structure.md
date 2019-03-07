@@ -25,15 +25,15 @@
 * temperature_30m : float (degree celsius)
 * wind_speed : float (m/s)
 * wind_direction : integer (degree)
-* wind_sect : string 
+* wind_sect : string (e.g : NW, ESE, ...)
 * rain_quantity : float (mm)
 * (pm_10) 
 
 ## gateway_load
 * gw_id : string
 * timestamp : timestamp (time region - date - hour)
-* n_uplink : integer
-* n_downlink : integer
+* n_uplink : integer (from end-device to Network)
+* n_downlink : integer (from Network to end-device)
 
 ## device-gateway
 * gw_id : string
@@ -47,3 +47,6 @@
 * gw_latitude : float
 * gw_longitude : float
 * gw_altitude : integer
+
+## free_days
+* date : date
