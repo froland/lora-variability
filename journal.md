@@ -1,5 +1,19 @@
 # Meeting notes
 
+## 2019-03-07
+
+### Attendees
+
+* François
+* Nikola
+
+### Notes
+* Retroplanning
+* Completion of the data structure files and parameters to measure
+
+### Next steps
+
+
 ## 2019-03-06
 
 ### Attendees
