@@ -11,6 +11,10 @@
 * SF : integer (from 7 to 12)
 * payload_size : integer (in bytes)
 * coding rate (symbols per bit)
+* power_tx : integer (dBm)
+* dev_latitude : float
+* dev_longitude : float
+* dev_altitude : integer
 
 ## weather
 * timestamp (from the internet data flow) : timestamp (time region - date - hour)
@@ -37,3 +41,9 @@
 * timestamp : timestamp 
 * n_packet_sent : integer
 * n_packet_received_gw : integer
+
+## gateway_location
+* gw_id : string
+* gw_latitude : float
+* gw_longitude : float
+* gw_altitude : integer
