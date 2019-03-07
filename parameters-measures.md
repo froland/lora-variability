@@ -4,41 +4,37 @@
 
 * Temperature (from weather data flow)
 * Rain quantity (from weather data flow)
-* Humidity of air (from weather data flow)
-* Solar radiation (check with M. Roland)
+* Humidity of air (from weather data flow) -- not available yet
 * Atmospheric pressure (from weather data flow)
 * Wind speed and direction (from weather data flow)
-* Airborne particulate matter (check with M. Roland)
+* Wind sector (from weather data flow)
 
 
 ## Internal end-device parameters
 
-* RSSI
-* SNR
-* Timestamp
-* Frequency band
-* CR (coding rate)
-* SF (spreading factor)
-* Payload size
+* RSSI (from the gateways)
+* SNR (from the gateways)
+* Timestamp (from the gateways)
+* Frequency band (from the gateways)
+* CR (coding rate) (from the gateways)
+* SF (spreading factor) (from the gateways)
+* Payload size (from the gateways)
 * Emission power (if we can get it and transmit it - transmit the previous power(s) in the next packet(s) - store the values in non-volatile memory)
 
 
-# Parameters that could be computed from measures
+## Parameters that could be computed from measures (Nikola)
 
 * Packet reception rate
-* (Packet error rate)
+* Packet error rate
 * Gateway reception datarate
-* (To discuss) Daytime/nighttime measures
-* Week-end, working period, holidays
+* Daytime/nighttime measures
+* Week-end, working period, holidays --> Need a structure to know when it is a free day (jour férié légal)
 * Season of the year
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
 
 * Pearson correlation matrix
-* RSSI as a function of the temperature, solar radiation, rain quantity, ...
-* (RSSI with different spreading factors)
-* (Probability density function of RSSI/SNR values of the received frames, as reported by gateways)
-* (To discuss) Histogram of the used SF 
-* RSSI as a function of the distance between the end-device and the gateway
-* SNR as a function of the distance between the end-device and the gateway
+* RSSI/SNR as a function of the temperature, rain quantity, ...
+* SNRmargin (for ADR)
+* RSSI/SNR as a function of the distance between the end-device and the gateway
