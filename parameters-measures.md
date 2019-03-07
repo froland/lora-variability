@@ -24,12 +24,14 @@
 
 ## Parameters that could be computed from measures (Nikola)
 
-* Packet reception rate (received packets/total number of sent packets) --> Each end-device has a counter that increments when a packet is sent (= total number of sent packets). In the "pk_gw" structure, we can identify the end-device with its dev_eui and check how many times there is an occurence of it in the table and compare that number with the counter.
+* Packet reception rate (received packets/total number of sent packets) --> Each end-device has a counter that increments when a packet is sent (= total number of sent packets). In the "pk_gw" structure, we can identify the end-device with its dev_eui and check how many times there is an occurence of it in the table and compare that number with the counter. REMARK : BEFORE SENDING THE PACKET, THE COUNTER VALUE MUST BE AT 0.
+--> OR : Total = cnt_max - cnt_min (ex: 257 - 253)
+--> OR : We know how many packets we send over a period of time (but problem if batteries run out ...)
 * Gateway reception rate (total number of packets received over a period of time) --> We just have to look at how many packets were received during one hour (for example) at a gateway.
-* Daytime/nighttime --> Need to look at the timestamp and classify them as "day" or "night"
+* Business hours --> Need to look at the timestamp and classify them as "work" or "sleep" (8-17)
 * Week-end, working period, holidays --> Structure "free_days"
-* Season of the year
-* Distance between end-device and gateway (computed with coordinates of both) : http://boulter.com/gps/distance/?from=42.990967+-71.463767&to=40+-70&units=k
+* Season of the year (standard dates of each season)
+* Distance between end-device and gateway (computed with coordinates of both) : http://boulter.com/gps/distance/?from=42.990967+-71.463767&to=40+-70&units=k --> For our experiment, we will consider a "flat earth" (we work on a few square km) so we don't need the formula...
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
