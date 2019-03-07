@@ -9,6 +9,7 @@
 
 ### Notes
 * Retroplanning
+* Brainstorming
 * Completion of the data structure files and parameters to measure
 
 ### Next steps
