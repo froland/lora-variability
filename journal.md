@@ -8,7 +8,7 @@
 * Nikola
 
 ### Notes
-* Retroplanning
+* Retroplanning ![Retroplanning - 20190307](Retroplanning-20190307.jpg)
 * Brainstorming
 * Completion of the data structure files and parameters to measure
 
