@@ -1,5 +1,20 @@
 # Meeting notes
 
+## 2019-03-18 (Skype)
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+* Adjusted the retroplanning
+* Statistics and graph to use with the .csv files
+* Complete transmission chain to provide for the next meeting
+* How to deploy the end-devices, what is needed right now
+* Planning the next meeting (22/03)
+
 ## 2019-03-07
 
 ### Attendees
