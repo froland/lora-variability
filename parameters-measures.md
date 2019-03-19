@@ -19,19 +19,20 @@
 * CR (coding rate) (from the gateways)
 * SF (spreading factor) (from the gateways)
 * Payload size (from the gateways)
-* Emission power (if we can get it and transmit it - transmit the previous power(s) in the next packet(s) - store the values in non-volatile memory)
+* Emission power (if we can get it and transmit it - transmit the previous 3 powers in the next packets - store the values in non-volatile memory. We transmit the last 3 powers because there is a risk of packet loss - if I my actual packet is sent but doesn't arrive, I will get the transmission power in the next packets)
 
 
 ## Parameters that could be computed from measures (Nikola)
 
-* Packet reception rate (received packets/total number of sent packets) --> Each end-device has a counter that increments when a packet is sent (= total number of sent packets). In the "pk_gw" structure, we can identify the end-device with its dev_eui and check how many times there is an occurence of it in the table and compare that number with the counter. REMARK : BEFORE SENDING THE PACKET, THE COUNTER VALUE MUST BE AT 0.
---> OR : Total = cnt_max - cnt_min (ex: 257 - 253)
---> OR : We know how many packets we send over a period of time (but problem if batteries run out ...)
+* Packet reception rate (received packets/total number of sent packets) 
+--> Each end-device has a counter that increments when a packet is sent (= total number of sent packets). In the "pk_gw" structure, we can identify the end-device with its dev_eui and check how many times there is an occurence of it in the table and compare that number with the counter. REMARK : BEFORE SENDING THE PACKET, THE COUNTER VALUE MUST BE AT 0. Drawback : if I reset my node (for any reason), I need to know if the counter has reset or not, to be able to carry on properly with the counting.
+--> Total = cnt_max - cnt_min (ex: 257 - 253). This method works well if the counter is never reset. We can always know how many packets were sent from the end-device (in total)
+--> We know how many packets we send over a period of time. This method is quiet simple, but not reliable. If the batteries of an end-device run out, we have to know exactly at what moment it happened to determine precisely how many packets were sent during the node's active period (when it was powered).
 * Gateway reception rate (total number of packets received over a period of time) --> We just have to look at how many packets were received during one hour (for example) at a gateway.
 * Business hours --> Need to look at the timestamp and classify them as "work" or "sleep" (8-17)
 * Week-end, working period, holidays --> Structure "free_days"
 * Season of the year (standard dates of each season)
-* Distance between end-device and gateway (computed with coordinates of both) : http://boulter.com/gps/distance/?from=42.990967+-71.463767&to=40+-70&units=k --> For our experiment, we will consider a "flat earth" (we work on a few square km) so we don't need the formula...
+* Distance between end-device and gateway (computed with coordinates of both) --> We can use the haversine function to compute the distance of two points on a sphere. After that, we can compute the real distance by considering the difference of altitude between the 2 points (Pythagore's formula)
 
 
 # Outputs : how to represent the data (graph, stastitics, ...)
