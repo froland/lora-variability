@@ -3,7 +3,7 @@
 ## packet_gateway (pk_gw) : This structure represents the packet sent from the node, passing through the gateways (but only one packet will be taken by the network server) and arriving at the application server
 * dev_eui : table of 8 bytes --> from node
 * counter : integer (increment when a new packet is sent from end-device) --> from node
-* gw_id : string --> from gateway
+* gw_id : string --> from gateway (only one packet from one gateway will be considered by the network server)
 * RSSI : integer (in dBm) --> from gateway
 * SNR : integer --> from gateway
 * timestamp : timestamp (time region - date - hour/min/sec/msec/µsec) --> from gateway
