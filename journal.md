@@ -15,6 +15,11 @@
 * How to deploy the end-devices, what is needed right now
 * Planning the next meeting (22/03)
 
+### Next steps
+
+* [ ] give the complete transmission chain (from the data to the .csv file)
+* [ ] try to give the code lines that will get the 3 last tx_powers and store it in the non-volatile memory
+
 ## 2019-03-07
 
 ### Attendees
