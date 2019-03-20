@@ -1,4 +1,4 @@
-dev_id;lat;long;altit
-1;50.4483;3.9551;34
-2;50.4457;3.9572;37
-3;50.454;3.9503;67
+device_id,latitude,longitude,altitude
+mobile-01,50.44831,3.95514,34
+mobile-02,50.44572,3.95726,37
+mobile-03,50.45475,3.95031,67

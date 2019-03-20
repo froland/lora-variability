@@ -34,8 +34,8 @@ pearson3 = np.corrcoef(df, rowvar = False)
 
 from haversine import haversine
 
-devloc=pd.read_csv('dummydevlocation.csv', sep=';')
-gtwloc=pd.read_csv('dummygtwlocation.csv', sep=';')
+devloc=pd.read_csv('dummydevlocation.csv', sep=',')
+gtwloc=pd.read_csv('dummygtwlocation.csv', sep=',')
 
 devloc = devloc.values
 gtwloc = gtwloc.values

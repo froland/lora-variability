@@ -1,4 +1,4 @@
-gtw_id_id;lat;long;altit
-1;50.4482;3.9552;60
-2;50.4547;3.9526;58
-3;50.4446;3.9582;32
+gateway_id,latitude,longitude,altitude
+eui-0000024b08030186,50.44824,3.95520,60
+eui-58a0cbfffe800581,50.45473,3.95264,58
+iotlab-rpi-03,50.44465,3.95832,32
