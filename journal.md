@@ -18,7 +18,7 @@
 ### Next steps
 
 * [ ] give the complete transmission chain (from the data to the .csv file)
-* [ ] try to give the code lines that will get the 3 last tx_powers and store it in the non-volatile memory
+* [ ] implement fetching the tx_power, storing it in the non-volatile memory and sending a payload with the last 3 values
 
 ## 2019-03-07
 
