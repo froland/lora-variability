@@ -9,6 +9,8 @@
 * Nikola
 
 ### Notes
+
+* Retroplanning ![Retroplanning - 20190318](Retroplanning-20190318.jpg)
 * Adjusted the retroplanning
 * Statistics and graph to use with the .csv files
 * Complete transmission chain to provide for the next meeting
