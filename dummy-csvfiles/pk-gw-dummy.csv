@@ -1,4 +1,4 @@
-﻿dev_eui;counter;gw_id;rssi;snr;timestmp;freqband;sf;pld_size;cr;power_tx;dev_lat;dev_long;dev_alt
+﻿dev_eui;counter;gw_id;rssi;snr;timestamp;freqband;spreadfactor;payload_size;cr;power_tx;dev_latit;dev_longit;dev_altit
 FA FB FC FD 01 02 03 04;1;gw-eui02;-37;9.5;1552925435;867.1;7;16;0.9;14;50.4515;3.9588;38
 FA FB FC FD 01 02 03 04;2;gw-eui02;-40;8.5;1552926635;867.1;7;16;0.9;14;50.4515;3.9588;38
 FA FB FC FD 01 02 03 04;3;gw-eui02;-35;9;1552927835;867.1;7;16;0.9;12;50.4515;3.9588;38
