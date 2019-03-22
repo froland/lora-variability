@@ -1,5 +1,31 @@
 # Meeting notes
 
+## 2019-03-22 (Skype)
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+
+* Retroplanning ![Retroplanning - 20190322](Retroplanning-20190322.jpg)
+* Adjusted the retroplanning
+* Discussion about the document with the complete transmission chain
+* Suggestions for improvements (for the document)
+* Explaining how to Adjust the transmission chain to our project
+* Questions/answers about the statistics to use first
+
+### Next steps
+
+* [ ] Find out what kind of data the sensors will give (super-node) and the size of this data
+* [ ] Find out the size of the payload (min and max values) in the LoRaWAN data frame
+* [ ] Adjust the transmission chain to our project (by considering the remarks)
+* [ ] Identify the minimum required GPS parameters to fit in the payload field
+* [ ] Write a python code that will get these GPS parameters
+
+
 ## 2019-03-18 (Skype)
 
 ### Attendees
@@ -19,7 +45,7 @@
 
 ### Next steps
 
-* [ ] give the complete transmission chain (from the data to the .csv file)
+* [X] give the complete transmission chain (from the data to the .csv file)
 * [ ] implement fetching the tx_power, storing it in the non-volatile memory and sending a payload with the last 3 values
 
 ## 2019-03-07
@@ -52,7 +78,7 @@
 * [X] 08/03 report what needs to be collected:
   * internal parameters
   * external parameters with priority
-* [ ] write dummy CSV files with selected data
+* [X] write dummy CSV files with selected data
 
 ## 2019-02-27
 
