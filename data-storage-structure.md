@@ -23,7 +23,7 @@
 * station_longitude : float
 * temperature_3m : float (degree celsius)
 * temperature_30m : float (degree celsius)
-* atmospheric_pressure : float (atm) (information will come from the "Super-Node")
+* atmospheric_pressure : float (Pa) (information will come from the "Super-Node")
 * Air_humidity : integer (percentage) (information will come from the "Super-Node")
 * wind_speed : float (m/s)
 * wind_direction : integer (degree)
