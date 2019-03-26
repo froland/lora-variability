@@ -36,7 +36,7 @@ def join_ttn(lora):
       print("joining new TTN session...")
     app_eui = unhexlify(config.app_eui)
     app_key = unhexlify(config.app_key)
-    lora.join(activation=LoRa.OTAA, auth=(app_eui, app_key), timeout=0, dr=0)
+    lora._join(activation=LoRa.OTAA, auth=(app_eui, app_key), timeout=0, dr=0)
     chrono = machine.Timer.Chrono()
     while not lora.has_joined() and chrono.read() < wait_for_lora_s:
       sleep(5)

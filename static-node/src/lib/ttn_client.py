@@ -1,10 +1,17 @@
+import socket
+from binascii import unhexlify
+from time import sleep
+
 try:
     from network import LoRa
 except ImportError:
     class LoRa:
         pass
-import socket
-from binascii import unhexlify
+try:
+    from machine import Timer
+except ImportError:
+    class Timer:
+        pass
 
 
 class JoinException(Exception):
@@ -12,19 +19,24 @@ class JoinException(Exception):
 
 
 class TtnClient:
-    def __init__(self, app_eui, app_key):
+    def __init__(self, app_eui, app_key, join_timeout):
         self.lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868, adr=False)
         self.app_eui = unhexlify(app_eui)
         self.app_key = unhexlify(app_key)
+        self.join_timeout = join_timeout
 
-    def join(self):
+    def _join(self):
         self.lora.join(activation=LoRa.OTAA, auth=(self.app_eui, self.app_key), timeout=0, dr=0)
+        chrono = Timer.Chrono()
+        while not self.lora.has_joined() and chrono.read() < self.join_timeout:
+            sleep(1)
+        chrono.stop()
         if not self.lora.has_joined():
             raise JoinException
 
     def send(self, payload):
         if not self.lora.has_joined():
-            self.join()
+            self._join()
         s = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
         print(s)
         s.setsockopt(socket.SOL_LORA, socket.SO_CONFIRMED, False)
