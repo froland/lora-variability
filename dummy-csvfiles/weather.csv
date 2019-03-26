@@ -1,4 +1,4 @@
-﻿timestmp;station_id;station_lat;station_long;temp_3m;temp_30m;wnd_spd;wnd_drct;wind_sect;rain_quan
+﻿timestamp;station_id;station_latit;station_longit;temp_3m;temp_30m;wind_speed;wind_direction;wind_sector;rain_quantity
 1552867200;TMCH04;50.4289;4.4587;2.25;1.75;3.79;241;OSO;0
 1552870800;TMCH04;50.4289;4.4587;2;1.7;3.64;241;OSO;0
 1552874400;TMCH04;50.4289;4.4587;2.3;1.95;3.8;234.5;OSO;0
