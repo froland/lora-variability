@@ -36,6 +36,7 @@ class TtnClient:
             print("Joining new session...")
         self.lora.join(activation=LoRa.OTAA, auth=(self.app_eui, self.app_key), timeout=0, dr=0)
         chrono = Timer.Chrono()
+        chrono.start()
         while not self.lora.has_joined() and chrono.read() < self.join_timeout:
             if self.debug:
                 print(".", end='')

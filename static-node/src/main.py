@@ -1,4 +1,5 @@
 import machine
+from time import sleep
 
 try:
     import config
@@ -38,4 +39,5 @@ except Exception as ex:
     print("!!! Exception detected !!!", type(ex), ex, flush=True)
 finally:
     print("Trigger reset")
+    sleep(1)
     machine.reset()

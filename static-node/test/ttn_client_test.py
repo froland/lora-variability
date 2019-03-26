@@ -27,6 +27,7 @@ class TtnClientTest(TestCase):
         client.send(PAYLOAD)
 
         lora.join.assert_called()
+        chrono.start.assert_called()
         socket.send.assert_called_with(PAYLOAD)
         lora.nvram_save.assert_called()
 
