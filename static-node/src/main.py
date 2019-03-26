@@ -24,14 +24,18 @@ try:
     pycom.heartbeat(False)
     if DEBUG:
         pycom.rgbled(VIOLET)
-    client = TtnClient(config.app_eui, config.app_key, WAIT_FOR_LORA_S)
+        print("Initializing TTN client...")
+    client = TtnClient(config.app_eui, config.app_key, WAIT_FOR_LORA_S, debug=DEBUG)
     if DEBUG:
         pycom.rgbled(BLUE)
+        print("Sending payload...")
     client.send([])
     if DEBUG:
         pycom.rgbled(GREEN)
+        print("Going to sleep...")
     machine.deepsleep(SLEEP_TIMEOUT_S * 1000)
 except Exception as ex:
-    print("!!! Exception detected !!!", type(ex), ex)
+    print("!!! Exception detected !!!", type(ex), ex, flush=True)
 finally:
+    print("Trigger reset")
     machine.reset()
