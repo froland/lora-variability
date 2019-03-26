@@ -20,13 +20,13 @@ class JoinException(Exception):
 
 class TtnClient:
     def __init__(self, app_eui, app_key, join_timeout):
-        self.lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868, adr=False)
         self.app_eui = unhexlify(app_eui)
         self.app_key = unhexlify(app_key)
         self.join_timeout = join_timeout
+        self.lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868, adr=False)
+        self.lora.nvram_restore()
 
     def _join(self):
-        self.lora.nvram_restore()
         if not self.lora.has_joined():
             self.lora.join(activation=LoRa.OTAA, auth=(self.app_eui, self.app_key), timeout=0, dr=0)
             chrono = Timer.Chrono()
