@@ -13,9 +13,10 @@ class TtnClientTest(TestCase):
     def test_constructor(self, LoRa):
         client = TtnClient(APP_EUI, APP_KEY, JOIN_TIMEOUT)
 
+    @patch('ttn_client.sleep')
     @patch('ttn_client.Timer')
     @patch('ttn_client.socket')
-    def test_send_payload(self, socketClass, Timer, LoRa):
+    def test_send_payload(self, socketClass, Timer, sleep, LoRa):
         socket = socketClass.socket.return_value
         chrono = Timer.Chrono.return_value
         chrono.read.side_effect = [1, 2]
@@ -51,7 +52,7 @@ class TtnClientTest(TestCase):
     def test_send_with_recovered_session(self, socketClass, LoRa):
         socket = socketClass.socket.return_value
         lora = LoRa.return_value
-        lora.has_joined.side_effect = [False, True]
+        lora.has_joined.return_value = True
 
         client = TtnClient(APP_EUI, APP_KEY, JOIN_TIMEOUT)
         client.send(PAYLOAD)
