@@ -1,6 +1,6 @@
 # Meeting notes
 
-## 2019-03-22 (Skype)
+## 2019-03-22
 
 ### Attendees
 
@@ -20,8 +20,8 @@
 ### Next steps
 
 * [ ] Find out what kind of data the sensors will give (super-node) and the size of this data
-* [ ] Find out the size of the payload (min and max values) in the LoRaWAN data frame
-* [ ] Adjust the transmission chain to our project (by considering the remarks)
+* [x] Find out the size of the payload (min and max values) in the LoRaWAN data frame
+* [x] Adjust the transmission chain to our project (by considering the remarks)
 * [ ] Identify the minimum required GPS parameters to fit in the payload field
 * [ ] Write a python code that will get these GPS parameters
 
