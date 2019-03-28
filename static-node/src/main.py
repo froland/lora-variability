@@ -1,6 +1,7 @@
 import machine
 from time import sleep
 
+
 try:
     import config
     import pycom
@@ -22,6 +23,8 @@ try:
     ORANGE = const(0xFF7F00)
     RED = const(0xFF0000)
 
+    pycom.wifi_on_boot(False)
+    pycom.wdt_on_boot(False)
     pycom.heartbeat(False)
     if DEBUG:
         pycom.rgbled(VIOLET)
@@ -30,13 +33,14 @@ try:
     if DEBUG:
         pycom.rgbled(BLUE)
         print("Sending payload...")
-    client.send([])
+    payload = bytes([0x00])
+    client.send(payload)
     if DEBUG:
         pycom.rgbled(GREEN)
         print("Going to sleep...")
     machine.deepsleep(SLEEP_TIMEOUT_S * 1000)
 except Exception as ex:
-    print("!!! Exception detected !!!", type(ex), ex, flush=True)
+    print("!!! Exception detected !!!", type(ex), ex)
 finally:
     print("Trigger reset")
     sleep(1)
