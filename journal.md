@@ -10,6 +10,7 @@
 
 ### Notes
 
+* Retroplanning ![Retroplanning - 20190328](Retroplanning-20190328.jpg)
 * Review of the document about maximum payload size and values returned by sensors for environmental parameters
 * Discussion about needed GPS values and need accuracy
 * Discussion about the different kinds of nodes
