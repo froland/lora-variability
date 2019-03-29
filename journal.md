@@ -1,5 +1,30 @@
 # Meeting notes
 
+## 2019-03-28
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+
+* Review of the document about maximum payload size and values returned by sensors for environmental parameters
+* Discussion about needed GPS values and need accuracy
+* Discussion about the different kinds of nodes
+* Suggestions for the super-node (use Pytrack or Pysense)
+* Advices for analysing the data (methods and graphs)
+* Discussion about the placement of the nodes in Mons
+
+### Next steps
+
+* [ ] Find volounteers to take our emitters and put them on their window sill or balcony
+* [ ] Write a small tutorial to explain to volounteers how to place the nodes and how to recover the GPS coordinates
+* [ ] Make a list of the participating volounteers and the nodes they received
+* [ ] Find solutions for the super-node (identify where to connect the sensors, how, is there I2C available, ...)
+* [ ] Adopt a more pragmatic approach for the GPS values to return
+
 ## 2019-03-22
 
 ### Attendees
@@ -19,7 +44,7 @@
 
 ### Next steps
 
-* [ ] Find out what kind of data the sensors will give (super-node) and the size of this data
+* [x] Find out what kind of data the sensors will give (super-node) and the size of this data
 * [x] Find out the size of the payload (min and max values) in the LoRaWAN data frame
 * [x] Adjust the transmission chain to our project (by considering the remarks)
 * [ ] Identify the minimum required GPS parameters to fit in the payload field
