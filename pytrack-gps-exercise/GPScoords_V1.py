@@ -6,7 +6,7 @@ def GPScoords():
     and altitude from the GPS chip of the Pytrack expansion board and 
     returns a byte array that can be sent by the buffer of a LoRa transmission.
     The format of the data is the following (field size is in bits): 
-    altitude(9) - latitude decimal (14) latitude degree (1) - longitude decimal (14) - degree decimal (2)
+    altitude(9) - latitude decimal (14) - latitude degree (1) - longitude decimal (14) - longitude degree (2)
     The total amount of bits is 40, which makes 5 bytes to send.
     NOTE1: The decimal values must be divided by 10000 at the reception and added to the degree part.
     NOTE2: At the recepetion, latitude = latitude+50 and longitude = longitude + 3 """
