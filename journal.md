@@ -24,7 +24,7 @@
 * [ ] Write a small tutorial to explain to volounteers how to place the nodes and how to recover the GPS coordinates
 * [ ] Make a list of the participating volounteers and the nodes they received
 * [ ] Find solutions for the super-node (identify where to connect the sensors, how, is there I2C available, ...)
-* [ ] Adopt a more pragmatic approach for the GPS values to return
+* [x] Adopt a more pragmatic approach for the GPS values to return (see scripts for comments)
 
 ## 2019-03-22
 
@@ -48,8 +48,8 @@
 * [x] Find out what kind of data the sensors will give (super-node) and the size of this data
 * [x] Find out the size of the payload (min and max values) in the LoRaWAN data frame
 * [x] Adjust the transmission chain to our project (by considering the remarks)
-* [ ] Identify the minimum required GPS parameters to fit in the payload field
-* [ ] Write a python code that will get these GPS parameters
+* [x] Identify the minimum required GPS parameters to fit in the payload field
+* [x] Write a python code that will get these GPS parameters
 
 
 ## 2019-03-18 (Skype)
