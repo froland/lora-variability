@@ -21,7 +21,7 @@
 ### Next steps
 
 * [ ] Find volounteers to take our emitters and put them on their window sill or balcony
-* [ ] Write a small tutorial to explain to volounteers how to place the nodes and how to recover the GPS coordinates
+* [x] Write a small tutorial to explain to volounteers how to place the nodes and how to recover the GPS coordinates
 * [ ] Make a list of the participating volounteers and the nodes they received
 * [ ] Find solutions for the super-node (identify where to connect the sensors, how, is there I2C available, ...)
 * [x] Adopt a more pragmatic approach for the GPS values to return (see scripts for comments)
