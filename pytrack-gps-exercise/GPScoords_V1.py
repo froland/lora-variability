@@ -47,7 +47,7 @@ def GPScoords():
     list_alt = ['0']*9
 
     #Putting the strings in the fixed size lists (LSB is on the top right)
-	list_deg_lat[0] = bin_deg_lat
+    list_deg_lat[0] = bin_deg_lat
 	
     n = len(list_dec_lat)-1
     for i in reversed(range(len(bin_dec_lat))):
