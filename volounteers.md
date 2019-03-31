@@ -7,3 +7,7 @@
 * Christine Renotte (Dean of the FPMS) - Rue de Houdain (bureau de la Doyenne)
 * Guy De Weireld (FPMS teacher - Thermodynamics) - Appartement à la rue Jean Lescart n°2 (au 2e étage)
 * Amy Gorton (CLV teacher - English) - Appartement au coin de la rue de la boulangerie et boulevard Albert Elisabeth (au 3e étage)
+
+## People who have not accepted yet
+* Laurence Chainaye (CLV teacher)
+* Alain Buys (Faculté des Sciences)
