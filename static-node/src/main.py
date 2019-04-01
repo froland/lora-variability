@@ -1,7 +1,7 @@
 import machine
 from time import sleep
 
-DEBUG = True
+DEBUG = False
 
 try:
     import config
@@ -56,7 +56,8 @@ try:
     if DEBUG:
         pycom.rgbled(GREEN)
         print("Going to sleep...")
-    machine.deepsleep(SLEEP_TIMEOUT_S * 1000)
+    py.setup_sleep(SLEEP_TIMEOUT_S)
+    py.go_to_sleep(gps=False)
     if DEBUG:
         pycom.rgbled(RED)
         print("This message should not be displayed")
