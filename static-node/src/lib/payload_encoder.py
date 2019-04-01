@@ -14,9 +14,9 @@ def _convert_pressure(input):
     return round((input - 80000.0) / 7.0)
 
 
-def encode(battery_voltage, temperature, humidity, barometric_pressure):
+def encode(battery_voltage: float, temperature: float, humidity: float, barometric_pressure: float):
     payload = _convert_battery_voltage(battery_voltage) << 30
     payload += _convert_temperature(temperature) << 20
     payload += _convert_humidity(humidity) << 12
     payload += _convert_pressure(barometric_pressure)
-    return payload.to_bytes(5, byteorder='big', signed=False)
+    return payload.to_bytes(5, 'big', False)
