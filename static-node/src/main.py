@@ -14,7 +14,7 @@ try:
     from ttn_client import TtnClient
 
     WAIT_FOR_LORA_S = const(30)
-    SLEEP_TIMEOUT_S = const(20)
+    SLEEP_TIMEOUT_S = const(20)  # TODO change to something between 10 and 20 minutes
 
     # Colors
     OFF = const(0x000000)
