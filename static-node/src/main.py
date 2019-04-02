@@ -1,7 +1,7 @@
 import machine
 from time import sleep
 
-DEBUG = False
+DEBUG = True  # TODO set to false to avoid wasting energy with LED
 
 try:
     import config
@@ -12,6 +12,7 @@ try:
     from MPL3115A2 import MPL3115A2, PRESSURE
     import payload_encoder
     from ttn_client import TtnClient
+    from datarate_selector import select_datarate
 
     WAIT_FOR_LORA_S = const(30)
     SLEEP_TIMEOUT_S = const(20)  # TODO change to something between 10 and 20 minutes
@@ -52,6 +53,7 @@ try:
         pycom.rgbled(BLUE)
         print("Sending payload...")
     payload = payload_encoder.encode(battery, temperature, humidity, pressure)
+    datarate = select_datarate(0)  # provide an incrementing index
     client.send(payload)
     if DEBUG:
         pycom.rgbled(GREEN)
