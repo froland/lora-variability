@@ -68,3 +68,24 @@ def test_send_with_recovered_session(mocker):
     lora.join.assert_not_called()
     socket.send.assert_called_with(PAYLOAD)
     assert lora.nvram_save.called
+
+
+def test_send_with_datarate(mocker):
+    LoRa = mocker.patch('ttn_client.LoRa')
+    mocker.patch('ttn_client.sleep')
+    Timer = mocker.patch('ttn_client.Timer')
+    socketClass = mocker.patch('ttn_client.socket')
+    socket = socketClass.socket.return_value
+    chrono = Timer.Chrono.return_value
+    chrono.read.side_effect = [1, 2]
+    lora = LoRa.return_value
+    lora.has_joined.side_effect = [False, False, True, True]
+
+    client = TtnClient(APP_EUI, APP_KEY, JOIN_TIMEOUT)
+    client.send(PAYLOAD, 2)
+
+    assert lora.join.called
+    assert chrono.start.called
+    socket.setsockopt.assert_called_with(socketClass.SOL_LORA, socketClass.SO_DR, 2)
+    socket.send.assert_called_with(PAYLOAD)
+    assert lora.nvram_save.called
