@@ -19,4 +19,4 @@ def encode(battery_voltage: float, temperature: float, humidity: float, barometr
     payload += _convert_temperature(temperature) << 20
     payload += _convert_humidity(humidity) << 12
     payload += _convert_pressure(barometric_pressure)
-    return payload.to_bytes(5, 'big', False)
+    return payload.to_bytes(5, 'big', signed=False)

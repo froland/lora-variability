@@ -26,10 +26,10 @@ def test_send_payload(mocker):
     client = TtnClient(APP_EUI, APP_KEY, JOIN_TIMEOUT)
     client.send(PAYLOAD)
 
-    lora.join.assert_called()
-    chrono.start.assert_called()
+    assert lora.join.called
+    assert chrono.start.called
     socket.send.assert_called_with(PAYLOAD)
-    lora.nvram_save.assert_called()
+    assert lora.nvram_save.called
 
 
 def test_send_timeout(mocker):
@@ -49,7 +49,7 @@ def test_send_timeout(mocker):
     with raises(JoinException):
         client.send(PAYLOAD)
 
-    lora.join.assert_called()
+    assert lora.join.called
     socket.send.assert_not_called()
     lora.nvram_save.assert_not_called()
 
@@ -64,7 +64,7 @@ def test_send_with_recovered_session(mocker):
     client = TtnClient(APP_EUI, APP_KEY, JOIN_TIMEOUT)
     client.send(PAYLOAD)
 
-    lora.nvram_restore.assert_called()
+    assert lora.nvram_restore.called
     lora.join.assert_not_called()
     socket.send.assert_called_with(PAYLOAD)
-    lora.nvram_save.assert_called()
+    assert lora.nvram_save.called
