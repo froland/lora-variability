@@ -1,7 +1,7 @@
 import machine
 from time import sleep
 
-DEBUG = True  # TODO set to false to avoid wasting energy with LED
+DEBUG = False
 
 try:
     import config
@@ -15,7 +15,7 @@ try:
     from datarate_selector import select_datarate
 
     WAIT_FOR_LORA_S = const(30)
-    SLEEP_TIMEOUT_S = const(20)  # TODO change to something between 10 and 20 minutes
+    SLEEP_TIMEOUT_S = const(600)
 
     # Colors
     OFF = const(0x000000)
@@ -53,8 +53,12 @@ try:
         pycom.rgbled(BLUE)
         print("Sending payload...")
     payload = payload_encoder.encode(battery, temperature, humidity, pressure)
-    datarate = select_datarate(0)  # provide an incrementing index
-    client.send(payload)
+    counter = pycom.nvs_get('counter')
+    if counter is None or counter > 65535:
+        counter = 0
+    datarate = select_datarate(counter)
+    pycom.nvs_set('counter', counter + 1)
+    client.send(payload, datarate)
     if DEBUG:
         pycom.rgbled(GREEN)
         print("Going to sleep...")
