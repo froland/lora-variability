@@ -2,9 +2,7 @@ import payload_encoder
 
 
 def test_encode():
-    payload_bytes = payload_encoder.encode(4.766989, 26.34879, 33.79111, 102286.5)
-    assert len(payload_bytes) == 5
-    payload = int.from_bytes(payload_bytes, byteorder='big', signed=False)
+    payload = payload_encoder.encode(4.766989, 26.34879, 33.79111, 102286.5)
     decoded_battery = payload >> 30
     assert decoded_battery == 883
     decoded_temperature = (payload >> 20) & 0b1111111111

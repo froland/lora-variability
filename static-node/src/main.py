@@ -52,7 +52,7 @@ try:
     if DEBUG:
         pycom.rgbled(BLUE)
         print("Sending payload...")
-    payload = payload_encoder.encode(battery, temperature, humidity, pressure)
+    payload = payload_encoder.encode(battery, temperature, humidity, pressure).to_bytes(5, 'big', False)
     counter = pycom.nvs_get('counter')
     if counter is None or counter > 65535:
         counter = 0
