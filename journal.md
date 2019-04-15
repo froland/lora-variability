@@ -1,5 +1,28 @@
 # Meeting notes
 
+
+## 2019-04-05
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+
+* Presentation of the "exercice" code that sends GPS coordinates as a byte array
+* Discussing about improvements on the GPS code (how to adapt it to an embedded system)
+* Presentation of the "training" scripts
+* Discussing about some statistical tools to use to analyze the data
+* Discussion about technical specifications of the LoPy
+* Projection of the emitters's location on a map
+
+### Next steps
+
+* [ ] Present a simple evolution using a small database (a small .csv file)
+
+
 ## 2019-03-28
 
 ### Attendees
@@ -20,9 +43,9 @@
 
 ### Next steps
 
-* [ ] Find volounteers to take our emitters and put them on their window sill or balcony
+* [x] Find volounteers to take our emitters and put them on their window sill or balcony
 * [x] Write a small tutorial to explain to volounteers how to place the nodes and how to recover the GPS coordinates
-* [ ] Make a list of the participating volounteers and the nodes they received
+* [x] Make a list of the participating volounteers and the nodes they received
 * [x] Find solutions for the super-node (identify where to connect the sensors, how, is there I2C available, ...)
 * [x] Adopt a more pragmatic approach for the GPS values to return (see scripts for comments)
 
