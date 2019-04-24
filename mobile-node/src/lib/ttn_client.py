@@ -50,13 +50,13 @@ class TtnClient:
             if self.debug:
                 print("Joined new session")
 
-    def send(self, payload, datarate=5):
+    def send(self, payload, datarate=5, port=1):
         if not self.lora.has_joined():
             self._join()
         s = socket.socket(socket.AF_LORA, socket.SOCK_RAW)
         s.setsockopt(socket.SOL_LORA, socket.SO_CONFIRMED, False)
         s.setsockopt(socket.SOL_LORA, socket.SO_DR, datarate)
-        s.bind(1)
+        s.bind(port)
         s.setblocking(True)
         if self.debug:
             print("Sending payload...")

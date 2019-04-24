@@ -12,5 +12,10 @@ function Decoder(bytes, port) {
     decoded.hdop = hdop_payload / 100.0;
   }
 
+  if (port === 3) {
+    var battery_payload = (bytes[0] << 2) + (bytes[1] >> 6);
+    decoded.battery = (battery_payload) / 500.0 + 3.0;
+  }
+
   return decoded;
 }
