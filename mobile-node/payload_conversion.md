@@ -29,8 +29,8 @@ We also want to keep precision to reasonable values regarding our use case, that
 
 ## Horizontal dilution of precision
 
-* hdop_payload = round(hdop_factor * 50.0)
-* hdop_factor = hdop_payload / 50.0
+* hdop_payload = round(hdop_factor * 100.0)
+* hdop_factor = hdop_payload / 100.0
 * payload size: 10 bits
 * effective range: 0 - 10.23
-* effective precision: 0.02
+* effective precision: 0.01
