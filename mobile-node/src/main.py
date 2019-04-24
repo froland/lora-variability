@@ -2,7 +2,7 @@ import machine
 import gc
 from time import sleep
 
-DEBUG = True
+DEBUG = False
 
 try:
     import config
@@ -93,7 +93,7 @@ try:
     if DEBUG:
         pycom.rgbled(BLUE)
         print("Sending payload...")
-    payload = payload_encoder.encode(battery, latitude, longitude, hdop).to_bytes(7, 'big', False)
+    payload = payload_encoder.encode(battery, latitude, longitude, hdop).to_bytes(7 if fixed else 2, 'big', False)
     counter = pycom.nvs_get('counter')
     if counter is None or counter > 65535:
         counter = 0

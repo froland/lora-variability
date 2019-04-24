@@ -21,9 +21,6 @@ def encode(battery_voltage: float, latitude: float = None, longitude: float = No
         payload += _convert_latitude(latitude) << 30
         payload += _convert_longitude(longitude) << 14
         payload += _convert_hdop(hdop) << 4
-        payload += 0x0F
     else:
         payload = _convert_battery_voltage(battery_voltage) << 6
-        payload += 0x3F
     return payload
-
