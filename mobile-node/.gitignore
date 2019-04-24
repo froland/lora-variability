@@ -1,0 +1,6 @@
+config*.py
+.idea/
+*.iml
+.pytest-cache/
+venv/
+__pycache__/
