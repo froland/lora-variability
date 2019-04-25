@@ -1,0 +1,3 @@
+CREATE CONTINUOUS QUERY cq_lora_mons_transmission ON froland BEGIN SELECT min(*), mean(*), median(*), max(*) INTO a_year.lora_mons_downsampled_transmission FROM lora_mons_transmission GROUP BY time(1h), dev_id, gtw_id, frequency, spreading_factor END
+CREATE CONTINUOUS QUERY cq_lora_mons_battery ON froland BEGIN SELECT mean(battery) AS battery INTO a_year.lora_mons_downsampled_battery FROM lora_mons_battery GROUP BY time(1h), dev_id END
+CREATE CONTINUOUS QUERY cq_lora_mons_environment ON froland BEGIN SELECT min(temperature), min(humidity), min(pressure), max(temperature), max(humidity), max(pressure), mean(temperature), mean(humidity), mean(pressure) INTO a_year.lora_mons_downsampled_environment FROM lora_mons_environment GROUP BY time(1h), dev_id END
