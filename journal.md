@@ -19,7 +19,7 @@
 
 ### Next steps
 
-* [ ] Filter the data (remove duplicates and "non-activated" nodes)
+* [x] Filter the data (remove duplicates and "non-activated" nodes)
 * [ ] Present many figures and be able to explain them (scatter plots, boxplots, ...)
 * [ ] Present graphs with 1 gateway - many nodes and/or 1 node - many gateways
 
