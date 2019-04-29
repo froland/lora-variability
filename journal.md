@@ -1,5 +1,28 @@
 # Meeting notes
 
+## 2019-04-26
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+
+* Pointing out errors in the .csv file
+* Pointing out errors in the database (duplicated data)
+* Device "mobile_03" was not activated before yesterday evening and it was not moving
+* Presenting ideas on how to show the data (scatter plot, boxplot, ...)
+* Explaining the structure of a scientific article
+
+
+### Next steps
+
+* [x] Filter the data (remove duplicates and "non-activated" nodes)
+* [ ] Present many figures and be able to explain them (scatter plots, boxplots, ...)
+* [ ] Present graphs with 1 gateway - many nodes and/or 1 node - many gateways
+
 
 ## 2019-04-03
 
@@ -20,7 +43,7 @@
 
 ### Next steps
 
-* [ ] Present a simple evolution using a small database (a small .csv file)
+* [x] Present a simple evolution using a small database (a small .csv file)
 
 
 ## 2019-03-28
