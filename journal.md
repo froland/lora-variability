@@ -1,5 +1,29 @@
 # Meeting notes
 
+## 2019-05-02
+
+### Attendees
+
+* Francois
+* Véronique
+* Nikola
+
+### Notes
+
+* Presentation of the RSSI and SNR evolution trough time for each device-gateway link
+* Checking if some carrier frequenices were noisy
+* The two receiving gateways have different sensitivity levels (lowest reception level possible)
+* Establishing the fact that the SNR is the decisive parameter to take or drop a packet (static_7_02)
+* The RSSI level is linearly decreasing at static_6_03 (is tx_power decreasing ?)
+* Explaining the "pyramid" SF coding in the emitters
+* Establishing the fact that static_6_02, static_6_03 and static_7_02 behaviours at a certain moment in time is not correlated with temperature, humidity or pressure (both visually and with Pearson correlation matrices).
+
+### Next steps
+
+* [ ] Compute FER (Frame Error Rate) for each device and for each SF
+
+
+
 ## 2019-04-26
 
 ### Attendees
@@ -20,8 +44,8 @@
 ### Next steps
 
 * [x] Filter the data (remove duplicates and "non-activated" nodes)
-* [ ] Present many figures and be able to explain them (scatter plots, boxplots, ...)
-* [ ] Present graphs with 1 gateway - many nodes and/or 1 node - many gateways
+* [x] Present many figures and be able to explain them (scatter plots, boxplots, ...)
+* [x] Present graphs with 1 gateway - many nodes and/or 1 node - many gateways
 
 
 ## 2019-04-03
